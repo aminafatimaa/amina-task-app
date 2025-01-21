@@ -1,0 +1,8 @@
+<div [ngClass]="{'completed': task.isCompleted}">
+    <span>{{ task.title }}</span>
+    <button (click)="onToggleCompletion()">
+      {{ task.isCompleted ? 'Undo' : 'Complete' }}
+    </button>
+    <button (click)="onDelete()">Delete</button>
+  </div>
+  

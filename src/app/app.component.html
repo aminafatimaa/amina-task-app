@@ -177,7 +177,7 @@
   }
 </style>
 
-<main class="main">
+<!-- <main class="main">
   <div class="content">
     <div class="left-side">
       <svg
@@ -322,7 +322,25 @@
       </div>
     </div>
   </div>
-</main>
+</main> -->
+
+<div style="text-align:center">
+  <h1>Task Management Application</h1>
+
+  <!-- AddTaskComponent for adding tasks -->
+  <app-add-task (taskAdded)="addTask($event)"></app-add-task>
+
+  <!-- TaskListComponent for displaying the tasks -->
+  <app-task-list 
+    [tasks]="tasks" 
+    (taskDeleted)="deleteTask($event)" 
+    (taskToggled)="toggleTaskCompletion($event)">
+  </app-task-list>
+</div>
+
+
+
+
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
@@ -333,4 +351,4 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-<router-outlet />
+

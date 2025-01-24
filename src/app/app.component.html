@@ -1,3 +1,6 @@
+
+
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -327,6 +330,15 @@
 <div style="text-align:center">
   <h1>Task Management Application</h1>
 
+<nav>
+  <ul>
+    <li><a routerLink="/" routerLinkActive="active" >defaut</a></li>
+    <li><a routerLink="/home" routerLinkActive="active" >home</a></li>
+    <li><a routerLink="/task-lists" routerLinkActive="active" >task-list</a></li>
+  </ul>
+</nav>
+
+
   <!-- AddTaskComponent for adding tasks -->
   <app-add-task (taskAdded)="addTask($event)"></app-add-task>
 
@@ -349,6 +361,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
-

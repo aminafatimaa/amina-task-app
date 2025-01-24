@@ -1,3 +1,31 @@
+// import { Component, Output, EventEmitter } from '@angular/core';
+// import { Task } from '../task.model';
+// import { CommonModule, NgClass } from '@angular/common';
+// import { FormsModule, NgModel } from '@angular/forms';
+
+// @Component({
+//   selector: 'app-add-task',
+//   templateUrl: './add-task.component.html',
+//   styleUrls: ['./add-task.component.css'],
+//   standalone: true,
+//     imports:[FormsModule,CommonModule]
+// })
+// export class AddTaskComponent {
+//   taskTitle: string = '';  // Task input field
+
+//   @Output() taskAdded = new EventEmitter<Task>();  // Emit Task object
+
+//   addTask() {
+//     if (this.taskTitle.trim()) {
+//       const newTask = new Task(this.taskTitle);  // Create new Task object
+//       let u =this.taskAdded.emit(newTask);  // Emit the Task object
+//       console.log(u)
+//       this.taskTitle = '';  // Clear the input field
+//     }
+//   }
+// }
+
+
 import { Component, Output, EventEmitter } from '@angular/core';
 import { Task } from '../task.model';  // Ensure Task model is correct
 import { CommonModule } from '@angular/common';
